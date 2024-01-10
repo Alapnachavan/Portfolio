@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Open from './open';
+
+import Routing from './Routing.js';
 
 function App() {
   return (
     <div>
-     <Open/>
+     <Routing/>
     </div>
   );
 }
