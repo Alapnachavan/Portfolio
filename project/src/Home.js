@@ -3,6 +3,9 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { Typography } from "@mui/material";
+import Button from '@mui/material/Button';
+import Footer from "./Fotter";
+import { Link } from "react-router-dom";
 
 const Home= ()=>{
   const imgStyle = {
@@ -22,7 +25,7 @@ const Home= ()=>{
       <Navbar />
       
       <img
-        // src={'https://www.shutterstock.com/image-vector/young-woman-writes-code-on-260nw-1731157933.jpg'}
+      
         src={'https://www.21kschool.com/blog/wp-content/uploads/2023/04/Girls-coding-myth.png'}
         style={imgStyle}
       />
@@ -33,25 +36,40 @@ const Home= ()=>{
           <h2 style={{ textDecoration: 'underline' }}>
               About Me
           </h2>
-          <h3>
+          <h4>
               With a background in Bcom, I discovered my love for web development.
                   <br/>
               I thrive on turning creative ideas into functional and visually appealing websites. My expertise lies in HTML, CSS, JavaScript, and modern frameworks like React.
-          </h3>
+          </h4>
       </Typography>
 
       <Typography sx={{textAlign:'center'}}>
           <h2 style={{ textDecoration: 'underline' }}>
               project 
           </h2>
-          <h3>
+          <h4>
               Explore a curated selection of my projects below.
                   <br/>
-              Each one showcases my commitment to delivering high-quality and responsive web solutions. From e-commerce platforms to interactive portfolios,
-                  <br/>
-              these projects highlight my versatility and attention to detail.
-          </h3>
+              Each one showcases my commitment to delivering high-quality and responsive web solutions.
+          </h4>
+          <Button  component={Link} to="/Project" variant="contained" style={{ backgroundColor: '#808080', color: 'white' }}>
+             View Projects
+          </Button>
+
       </Typography>
+      <Typography sx={{textAlign:'center'}}>
+          <h2 style={{ textDecoration: 'underline'}}>
+              Blog
+          </h2>
+          <h4>
+          I'm also working on some technical and non-technical blogs. I like to document my journery of learning.
+          </h4>
+          <Button  component={Link} to="/Blog" variant="contained" style={{ backgroundColor: '#808080', color: 'white' ,marginBottom: '100px' }}>
+              View Blog
+          </Button>
+
+      </Typography>
+      <Footer/>
 
 
       

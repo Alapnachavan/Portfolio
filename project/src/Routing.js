@@ -42,6 +42,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Open from './Open';
 import Home from './Home';
+import Project from './Project';
+import Blog from './Blog';
 
 const App = () => {
   return (
@@ -49,6 +51,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Open />} />
         <Route path="/Home" element={<Home />} />
+        <Route path="/Project" element={<Project/>} />
+        <Route path="/Blog" element={<Blog/>} />
       </Routes>
     </Router>
   );

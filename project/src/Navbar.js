@@ -5,8 +5,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { Link } from 'react-router-dom';
 
-// export default function ButtonAppBar() {
 const Navbar =()=>{
   return (
     <Box sx={{ flexGrow: 1 }} >
@@ -17,8 +17,10 @@ const Navbar =()=>{
           </Typography>
           
           <Tabs textColor="inherit">
-            <Tab label="Project" />
-            <Tab label="Blog" />
+            {/* <Tab label="Project" />
+            <Tab label="Blog" /> */}
+            {/* <Tab label={<Link to="/Project">Project</Link>} /> */}
+            {/* <Tab label={<Link to="/Blog">Blog</Link>} /> */}
           </Tabs>
         </Toolbar>
       </AppBar>
