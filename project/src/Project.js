@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+import { styled } from '@mui/system';
 const Project = () => {
     const imgStyle = {
         display: 'block',
@@ -13,7 +14,7 @@ const Project = () => {
         width:'400px',
         
         
-      };
+    };
   return (
     <div>
       <style>{`
@@ -28,12 +29,10 @@ const Project = () => {
       src={'https://static.vecteezy.com/system/resources/previews/003/815/991/original/female-programmer-doing-software-coding-free-vector.jpg'}
       style={imgStyle}
     />
-      {/* <Typography  sx={{ textAlign: 'center', marginBottom:'60px' }}>
-          <h1>"Innovation in Every Line of Code."</h1>
-      </Typography> */}
        <Typography sx={{ textAlign: 'center', animation: 'fadeIn 7.5s ease-in-out', textShadow: '2px 2px 5px rgb(65, 69, 149)',marginBottom: '100px'  }}>
       <h2 sx={{ textAlign: 'center' }}> "Innovation in Every Line of Code."</h2>
     </Typography>
+   
       <Typography sx={{textAlign:'center'}}>
         <h2>Web Scrapping(Python)</h2>
         <h4>In this project scrap only 250 Bollywood movies data, and their all details like (Cast, Language, Country and all). </h4>
