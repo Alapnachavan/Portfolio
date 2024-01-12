@@ -92,7 +92,7 @@ const Contact = () => {
       style={imgStyle}
         />
          <Typography sx={{ textAlign: 'center', animation: 'fadeIn 7.5s ease-in-out', textShadow: '2px 2px 5px rgb(65, 69, 149)', marginBottom: '20px' }}>
-          <h2>Front-End Magic in the Making - Contact Me...!</h2>
+          <h2>Front-End Magic in the Making - Contact Me🤝🏻</h2>
         </Typography>
 
      
