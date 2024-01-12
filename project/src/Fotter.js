@@ -14,6 +14,7 @@ const Footer = () => {
   return (
     <footer style={{ backgroundColor: '#333', color: '#fff', textAlign: 'center', padding: '20px' }}>
       <div>
+        <i>Connect with me on social media.</i><br/>
           <IconButton href={githubLink} target="_blank" rel="noopener noreferrer">
           <GitHubIcon style={{ color: '#fff', fontSize: 30 }} />
           </IconButton>

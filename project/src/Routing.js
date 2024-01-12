@@ -44,6 +44,8 @@ import Open from './Open';
 import Home from './Home';
 import Project from './Project';
 import Blog from './Blog';
+import Resume from './Resume';
+import Contact from './Contact';
 
 const App = () => {
   return (
@@ -53,6 +55,8 @@ const App = () => {
         <Route path="/Home" element={<Home />} />
         <Route path="/Project" element={<Project/>} />
         <Route path="/Blog" element={<Blog/>} />
+        <Route path="/Resume" element={<Resume/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
       </Routes>
     </Router>
   );

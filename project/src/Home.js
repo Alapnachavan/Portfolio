@@ -29,11 +29,14 @@ const Home= ()=>{
         src={'https://www.21kschool.com/blog/wp-content/uploads/2023/04/Girls-coding-myth.png'}
         style={imgStyle}
       />
-      <Typography  sx={{ textAlign: 'center' }}>
+      {/* <Typography  sx={{ textAlign: 'center',marginBottom: '100px' }}>
           <h3>I'm a passionate front-end developer dedicated touser-centric and responsive  websites.</h3>
-      </Typography>
+      </Typography> */}
+      <Typography sx={{ textAlign: 'center', animation: 'fadeIn 7.5s ease-in-out', textShadow: '2px 2px 5px rgb(65, 69, 149)',marginBottom: '100px'  }}>
+      <h2 sx={{ textAlign: 'center' }}> I'm a passionate front-end developer dedicated touser-centric and responsive  websites.</h2>
+    </Typography>
       <Typography sx={{textAlign:'center'}}>
-          <h2 style={{ textDecoration: 'underline' }}>
+          <h2 >
               About Me
           </h2>
           <h4>
@@ -44,7 +47,7 @@ const Home= ()=>{
       </Typography>
 
       <Typography sx={{textAlign:'center'}}>
-          <h2 style={{ textDecoration: 'underline' }}>
+          <h2 >
               project 
           </h2>
           <h4>
@@ -58,7 +61,7 @@ const Home= ()=>{
 
       </Typography>
       <Typography sx={{textAlign:'center'}}>
-          <h2 style={{ textDecoration: 'underline'}}>
+          <h2>
               Blog
           </h2>
           <h4>
